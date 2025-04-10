@@ -1,5 +1,4 @@
-# https://github.com/1Danish-00/CompressorQueue/blob/main/License> .
-
+# [Previous imports remain the same]
 import logging
 import asyncio
 import glob
@@ -28,8 +27,6 @@ from telethon.sessions import StringSession
 from telethon.utils import pack_bot_file_id
 from .config import *
 LOG_FILE_NAME = "TG-videoCompress@Log.txt"
-
-
 
 if os.path.exists(LOG_FILE_NAME):
     with open(LOG_FILE_NAME, "r+") as f_d:
