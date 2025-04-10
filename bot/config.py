@@ -22,7 +22,7 @@ try:
     DEV = 1287276743
     OWNER = config("OWNER", "7207533746")
     ffmpegcode = ["-preset faster -c:v libx265 -s 854x480 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By AnshuSharma (https://github.com/Anshusharma75/TG-videoCompress)' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1"]
-    THUMB = config("THUMBNAIL")
+    THUMB = config("THUMBNAIL", "https://telegra.ph/file/30800c85ab730c3858b90-7f542ebcc15db4dd56.jpg")
 except Exception as e:
     LOGS.info("Environment vars Missing")
     LOGS.info("something went wrong")
